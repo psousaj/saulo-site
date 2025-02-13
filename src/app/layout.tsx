@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased wrap`}
         style={{
-          backgroundImage: `url(${BG.src})`,
+          backgroundImage: `url('/assets/img/BG.png')`,
           backgroundSize: "cover",
           backgroundRepeat: "repeat-y",
           backgroundPosition: "center",

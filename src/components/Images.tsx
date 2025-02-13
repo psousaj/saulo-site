@@ -1,8 +1,6 @@
 import principal from "@assets/img/principal.png";
 import secundaria from "@assets/img/secundaria.png";
-import light1 from "@assets/img/light.png";
-import light2 from "@assets/img/secondPagelight.png";
-import line from "@assets/img/line1.png";
+import line from "@assets/img/line.png";
 import barcode from "@assets/img/barcode.png";
 import BG from "@assets/img/BG.png";
 import blueBox from "@assets/img/blueBox.png";
@@ -22,8 +20,6 @@ import whatsappBox from "@assets/img/whatsappBox.png";
 export {
     principal,
     secundaria,
-    light1 as topLight,
-    light2 as aboutLight,
     line,
     barcode,
     BG,

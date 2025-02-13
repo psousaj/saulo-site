@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { button } from '@/components/Images';
 
 export function ComprarButton() {
     return (
@@ -7,7 +6,7 @@ export function ComprarButton() {
             href="#"
             className="inline-block rounded-full text-center px-8 py-6"
             style={{
-                backgroundImage: `url(${button.src})`,
+                backgroundImage: `url('/assets/img/comprarButton.png')`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
             }}
