@@ -17,5 +17,13 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto px-4 flex flex-1 justify-center items-center w-full;
+  }
+  .content {
+    @apply mx-14;
+  }
 }
