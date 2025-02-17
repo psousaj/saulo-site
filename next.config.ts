@@ -31,6 +31,20 @@ const nextConfig: NextConfig = {
       }
     ]
   },
+  async redirects() {
+    return [
+      {
+        source: "/contato",
+        destination: "https://api.whatsapp.com/send?phone=5588997976786&text=Olá%20Saulo,%20vim%20pelo%20site%20e%20gostaria%20de%20esclarecer%20umas%20dúvidas",
+        permanent: true
+      },
+      {
+        source: "/contato",
+        destination: "https://instagram.com/sauloalvesnutri",
+        permanent: true
+      }
+    ]
+  },
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

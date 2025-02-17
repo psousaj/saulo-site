@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { ComprarButton } from "@/components/ComprarButton";
 import PaymentBox from "@/components/PaymentBox";
 import FrequentlyAsks from "@/components/FrequentlyAsks";
 import Results from "@/components/Results";
@@ -7,6 +5,7 @@ import Testimonials from "@/components/Testimonials";
 import About from "@/components/About";
 import EbookItens from "@/components/EbookItens";
 import HeroSection from "@/components/HeroSection";
+import Footer from "@/components/Footer";
 
 const testimonials = [
   {
@@ -61,6 +60,9 @@ export default function Home() {
 
       {/* Frequently Questions */}
       <FrequentlyAsks />
+
+      <Footer />
     </main >
+
   )
 }

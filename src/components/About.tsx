@@ -49,7 +49,7 @@ export default function About() {
 
                 {/* About Light */}
                 <div className="absolute bottom-0 w-full h-2/3 z-[-1]">
-                    <Image src="/assets/img/aboutLight.png" fill objectFit="cover" alt="..." />
+                    <Image src="/assets/img/aboutLight.png" fill alt="..." />
                 </div>
             </div>
 
