@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Results({ results }: { results: string[] }) {
     return (
-        <div className="space-y-8">
+        <div className="container w-full space-y-8">
             {/* Title */}
             <div className="text-center space-y-2">
                 <h4 className="font-bold text-3xl">Resultados: </h4>

@@ -39,8 +39,13 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
-        source: "/contato",
+        source: "/instagram",
         destination: "https://instagram.com/sauloalvesnutri",
+        permanent: true
+      },
+      {
+        source: "/comprar",
+        destination: "https://hotmart.com",
         permanent: true
       }
     ]

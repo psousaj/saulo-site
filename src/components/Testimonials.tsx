@@ -10,7 +10,7 @@ type Testimonial = {
 
 export default function Results({ testimonials }: { testimonials: Testimonial[] }) {
     return (
-        <div className="container mx-auto space-y-16">
+        <div className="container w-full mx-auto space-y-16">
             {/* Testimonials Carousel */}
             <div className="space-y-8">
                 <div className="text-center space-y-2">

@@ -39,7 +39,7 @@ const results = [
 
 export default function Home() {
   return (
-    <main className="p-10 text-white grid grid-cols-1 gap-10">
+    <main className="p-10 text-white grid grid-cols-1 gap-10 mx-auto max-w-[1300px]">
       {/* Hero Section */}
       <HeroSection />
 

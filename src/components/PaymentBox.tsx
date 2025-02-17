@@ -36,13 +36,13 @@ export default function PaymentBox() {
                                 <div className="text-4xl items-baseline font-bold relative">
                                     <span className="text-xl absolute top-1">por:</span>
                                     <span className="text-5xl">5X R$</span>
-                                    <span className="text-8xl font-bold leading-none">6</span>
-                                    <span className="text-5xl absolute bottom-3">,98</span>
+                                    <span className="text-8xl font-bold leading-none">8</span>
+                                    <span className="text-5xl absolute bottom-3">,25</span>
                                 </div>
 
                                 {/* À vista price */}
                                 <div className="mt-2 mx-auto">
-                                    <span className="text-lg">ou à vista por 34,90</span>
+                                    <span className="text-xl">ou à vista por 37,90</span>
                                 </div>
                             </div>
                         </div>
@@ -55,10 +55,10 @@ export default function PaymentBox() {
                     <div className="mt-4">
                         <p className="text-sm mb-5 flex justify-center items-center gap-2">Ambiente 100% seguro <Image src="/assets/img/cadeado.png" width={18} height={8} alt="" /></p>
                         <div className="flex justify-evenly items-center gap-5">
-                            <Image src={"/assets/img/creditCard.png"} width={32} height={16} alt="" />
-                            <Image src={"/assets/img/barcode.png"} width={32} height={16} alt="" />
-                            <Image src={"/assets/img/pix.png"} width={32} height={16} alt="" />
-                            <Image src={"/assets/img/hotmart.png"} width={80} height={16} alt="" />
+                            <Image src={"/assets/img/creditCard.png"} width={32} height={16} title="Cartão de crédito" alt="Forma de pagamento Cartão de Crédito" />
+                            <Image src={"/assets/img/barcode.png"} width={32} height={16} title="Boleto Bancário" alt="Forma de pagamento Boleto" />
+                            <Image src={"/assets/img/pix.png"} width={32} height={16} title="Pix" alt="Forma de pagamento Pix" />
+                            <Image src={"/assets/img/hotmart.png"} width={80} height={16} title="Hotmart" alt="Logo Hotmart" />
                         </div>
                     </div>
 

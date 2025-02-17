@@ -49,7 +49,7 @@ const items = [
 
 export default function FrequentlyAsks() {
     return (
-        <div className="container relative grid grid-cols-2">
+        <div className="container relative grid grid-cols-2 pl-12">
             <div className="space-y-8 font-bold">
                 <h2 className="text-3xl ml-6">Perguntas <span className="text-blue-500">frequentes</span></h2>
                 <Accordion type="single" collapsible className="w-full  space-y-4" defaultValue="3">

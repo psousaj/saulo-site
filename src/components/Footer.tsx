@@ -5,9 +5,11 @@ import { Facebook, Instagram } from "lucide-react";
 export default function Footer() {
     return (
         <div className="container mt-10 grid grid-cols-1 justify-center items-center md:grid-cols-4 w-full max-h-40 h-fit">
+            {/* LOGO LEFT */}
             <div className="col-span-1 mx-auto h-auto">
                 <Image src="/assets/img/logo.png" alt="Logo" width={180} height={90} />
             </div>
+            {/* Text Right */}
             <div className="md:col-span-3 flex flex-wrap justify-between items-start">
                 <div className="space-y-6 flex-1">
                     <p className="">
