@@ -20,18 +20,16 @@ export default function Footer() {
                         </span>
                     </p>
                 </div>
-                <div className="flex flex-col justify-between gap-1 flex-1 h-auto">
+                <div className="flex h-auto space-y-2 flex-col items-start justify-between flex-1">
                     <p>Acompanhe nas redes sociais</p>
-                    <div className="self-start space-y-1">
-                        <Link className="flex gap-2 justify-center items-center m-0" href="/instagram">
-                            <Instagram width={20} height={20} />
-                            @sauloalvesnutri
-                        </Link>
-                        <Link aria-disabled className="flex gap-2 justify-center items-center m-0" href="/instagram">
-                            <Facebook fill="#fff" width={20} height={20} />
-                            @sauloalvesnutri
-                        </Link>
-                    </div>
+                    <Link className="flex gap-2 justify-center items-center m-0" href="/instagram">
+                        <Instagram width={20} height={20} />
+                        @sauloalvesnutri
+                    </Link>
+                    <Link aria-disabled className="flex gap-2 justify-center items-center m-0" href="/instagram">
+                        <Facebook fill="#fff" width={20} height={20} />
+                        @sauloalvesnutri
+                    </Link>
                 </div>
                 <div className="space-y-6 flex-1">
                     <p className="">
