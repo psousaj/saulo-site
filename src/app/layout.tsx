@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${poppins.variable} antialiased max-w-[100vw]`}
+        className={`${poppins.variable} antialiased max-w-[100vw] relative`}
         style={{
           backgroundImage: `url('/assets/img/BG.png')`,
           backgroundSize: "cover",
@@ -33,9 +33,6 @@ export default function RootLayout({
         }}
       >
         {children}
-        {/* Line */}
-        <div
-          className="w-full h-2 md:col-span-4 bg-gradient-to-r from-[#0092C8] to-[#0092C8]" />
       </body>
     </html>
   );

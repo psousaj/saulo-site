@@ -12,17 +12,17 @@ export default function Results({ results }: { results: string[] }) {
             </div>
             <Carousel
                 opts={{
-                    align: "start",
+                    align: "center",
                     loop: true,
                 }}
-                className="w-full justify-evenly"
+                className="w-full justify-center items-center md:justify-evenly"
             >
                 <CarouselContent className="-ml-2 md:-ml-4">
                     {results.map((result, index) => (
-                        <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3">
+                        <CarouselItem key={index} className="max-w-[300px] pl-2 md:pl-4 md:basis-1/3">
                             <Card className="border-0 bg-opacity-0 border-opacity-0">
                                 <CardContent className="p-4">
-                                    <Image src={result} className="rounded-xl" width={300} height={400} alt="Generic photo" />
+                                    <Image src={result} className="rounded-xl md:max-w-full" width={300} height={400} alt="Generic photo" />
                                 </CardContent>
                             </Card>
                         </CarouselItem>

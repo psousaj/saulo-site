@@ -12,14 +12,14 @@ export default function About() {
                     alt="Saulo Alves"
                     width={600}
                     height={700}
-                    className="rounded-3xl absolute z-[-1]"
+                    className="rounded-3xl absolute z-[-1] top-24 opacity-50 md:opacity-90 md:inset-0"
                     priority
                 />
             </div>
 
             {/* Right Column - Content */}
             <div className="relative space-y-6 p-4 overflow-visible flex flex-col justify-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#0088FF]">
+                <h2 className="text-3xl md:text-4xl mb-10 md:mb-0 font-bold text-[#0088FF]">
                     VOCÊ VAI APRENDER
                     <span className="block">COM QUEM SABE!</span>
                 </h2>

@@ -5,25 +5,13 @@ import { ComprarButton } from "./ComprarButton"
 
 export default function PaymentBox() {
     return (
-        <div className="container w-full mx-auto p-6 relative overflow-visible">
+        <div className="container relative w-full mx-auto p-6 overflow-visible">
             {/* Center Image */}
-            <Image
-                src={'/assets/img/blueRectPagamento.png'}
-                alt="..."
-                fill
-                className="absolute w-[150%] h-fit z-[-1] brightness-75"
-            />
+            <div className="bg-gradient-to-l from-[#004370] to-[#4697BE] absolute w-[98.8svw] h-[310px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
-            <div className="p-6 flex relative items-center gap-[135px]">
+            <div className="-translate-x-6 md:translate-x-0 md:p-6 flex relative items-center gap-[135px]">
                 {/* LEFT */}
-                <div
-                    style={{
-                        backgroundImage: "url('/assets/img/paymentBox.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "118% 116.5%",
-                        backgroundPosition: "center",
-                    }}
-                    className="left relative space-y-3 p-10 rounded-2xl w-[370px] h-[420px] flex justify-center flex-col">
+                <div className="relative bg-gradient-to-tl from-[#000914] to-[#00415A] border border-[#2F87AC] shadow-[3px_-3px_40px_-1px_#2F87AC] space-y-3 p-4 md:p-10 rounded-2xl w-[370px] h-[420px] flex justify-center flex-col">
                     {/* Header */}
                     <div className="text-left">
                         <p className="text-lg font-medium text-center mb-5">Você leva tudo isso por apenas:</p>
@@ -49,7 +37,7 @@ export default function PaymentBox() {
                     </div>
 
                     {/* CTA Button */}
-                    <ComprarButton classname="bg-[100%_110%] px-4" />
+                    <ComprarButton classname="px-4" />
 
                     {/* Security Badges */}
                     <div className="mt-4">
@@ -68,12 +56,12 @@ export default function PaymentBox() {
                         alt=""
                         width={150}
                         height={75}
-                        className="absolute -right-[120px] top-1/2 -translate-y-1/2"
+                        className="absolute -right-[85px] md:-right-[110px] scale-[.68] md:scale-100 top-1/2 -translate-y-[180px] md:-translate-y-1/2"
                     />
                 </div>
 
                 {/* RIGHT */}
-                <div className="flex items-start mt-5 flex-1">
+                <div className="hidden md:flex items-start mt-5 flex-1">
                     <div className="flex-1 space-y-7">
                         <h3 className="text-3xl leading-7 font-bold mb-2 flex flex-col">
                             Você não tem absolutamente
@@ -88,7 +76,7 @@ export default function PaymentBox() {
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }
 
