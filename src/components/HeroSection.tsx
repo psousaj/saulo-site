@@ -4,7 +4,7 @@ import { ComprarButton } from '@/components/ComprarButton';
 export default function HeroSection() {
     return (
 
-        <div className="container mx-auto grid h-screen grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="container mx-auto grid max-h-screen grid-cols-1 lg:grid-cols-2 items-center">
             {/* Light */}
             <div className="absolute inset-0 w-full h-[250px] md:h-[550px] z-[-1]">
                 <Image src="/assets/img/topLight.png" fill alt="..." />
@@ -20,10 +20,10 @@ export default function HeroSection() {
                     </h1>
                 </div>
 
-                <p className="text-2xl md:text-3xl leading-7 text-white/90">
-                    Transforme sua alimentação
-                    <span className="block">e otimize seus treinos</span>
-                </p>
+                <div className="text-2xl md:text-3xl leading-7 text-white/90">
+                    <p>Transforme sua alimentação</p>
+                    <p className="block">e otimize seus treinos</p>
+                </div>
 
                 <ComprarButton classname='hidden md:inline-block' />
             </div>

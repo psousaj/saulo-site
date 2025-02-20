@@ -11,7 +11,7 @@ export default function PaymentBox() {
 
             <div className="-translate-x-6 md:translate-x-0 md:p-6 flex relative items-center gap-[135px]">
                 {/* LEFT */}
-                <div className="relative bg-gradient-to-tl from-[#000914] to-[#00415A] border border-[#2F87AC] shadow-[3px_-3px_40px_-1px_#2F87AC] space-y-3 p-4 md:p-10 rounded-2xl w-[370px] h-[420px] flex justify-center flex-col">
+                <div className="relative bg-gradient-to-tl from-[#000914] to-[#00415A] border border-[#2F87AC] shadow-[3px_-3px_40px_-1px_#2F87AC] space-y-3 p-4 md:p-10 rounded-2xl flex-1 max-w-[370px] h-[420px] flex justify-center flex-col">
                     {/* Header */}
                     <div className="text-left">
                         <p className="text-lg font-medium text-center mb-5">Você leva tudo isso por apenas:</p>
@@ -41,7 +41,7 @@ export default function PaymentBox() {
 
                     {/* Security Badges */}
                     <div className="mt-4">
-                        <p className="text-sm mb-5 flex justify-center items-center gap-2">Ambiente 100% seguro <Image src="/assets/img/cadeado.png" width={18} height={8} alt="" /></p>
+                        <div className="text-sm mb-5 flex justify-center items-center gap-2">Ambiente 100% seguro <Image src="/assets/img/cadeado.png" width={18} height={8} alt="" /></div>
                         <div className="flex justify-evenly items-center gap-5">
                             <Image src={"/assets/img/creditCard.png"} width={32} height={16} title="Cartão de crédito" alt="Forma de pagamento Cartão de Crédito" />
                             <Image src={"/assets/img/barcode.png"} width={32} height={16} title="Boleto Bancário" alt="Forma de pagamento Boleto" />

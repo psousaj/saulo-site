@@ -7,53 +7,23 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-const items = [
-    {
-        id: "1",
-        title: "Para quem é esse E-book?",
-        content:
-            "Esse e-book é ideal para iniciantes na musculação que desejam aprender a se alimentar corretamente, montar sua dieta de forma equilibrada e entender os fundamentos da suplementação e do treino para alcançar seus objetivos, seja ganhar massa muscular ou perder gordura.",
-    },
-    {
-        id: "2",
-        title: "Como funciona o prazo de entrega?",
-        content:
-            "Após a confirmação do pagamento, você receberá um e-mail com o link para acessar e baixar o e-book imediatamente. O processo é 100% digital e seguro.",
-    },
-    {
-        id: "3",
-        title: "Posso pagar por boleto ou Pix?",
-        content:
-            "Sim! Aceitamos pagamentos via cartão de crédito, boleto bancário e Pix. Caso opte pelo boleto, a compensação pode levar até 3 dias úteis.",
-    },
-    {
-        id: "4",
-        title: "Como acessar o produto?",
-        content:
-            "Assim que o pagamento for aprovado, você receberá um e-mail com o link para baixar o e-book. Certifique-se de inserir um e-mail válido no momento da compra para evitar problemas no recebimento do material.",
-    },
-    {
-        id: "5",
-        title: "Como faço para comprar?",
-        content:
-            "Basta clicar no botão de compra disponível na página, escolher a forma de pagamento e finalizar a transação. Após a aprovação do pagamento, você terá acesso imediato ao material.",
-    },
-    {
-        id: "6",
-        title: "Consigo ter resultados com o E-book?",
-        content:
-            "Sim! O e-book traz um guia prático e direto para te ajudar a otimizar sua alimentação e seus treinos. Se você seguir as orientações corretamente e manter disciplina e consistência, conseguirá alcançar seus objetivos com mais eficiência.",
-    },
-];
+type AskType = {
+    id: string
+    title: string
+    content: string
+}
 
+type AskPropType = {
+    asks: AskType[]
+}
 
-export default function FrequentlyAsks() {
+export default function FrequentlyAsks({ asks }: AskPropType) {
     return (
         <div className="container relative grid grid-cols-1 gap-6 md:grid-cols-2 md:pl-12">
             <div className="space-y-8 font-bold">
                 <h2 className="text-3xl ml-6">Perguntas <span className="text-blue-500">frequentes</span></h2>
                 <Accordion type="single" collapsible className="w-full space-y-4" defaultValue="1">
-                    {items.map((item) => (
+                    {asks.map((item) => (
                         <AccordionItem
                             value={item.id}
                             key={item.id}

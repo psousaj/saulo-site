@@ -12,7 +12,6 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Saulo Alves",
   description: "Guia Prático de Dieta para Iniciantes na Musculação",
-  creator: "Saulo Alves"
 };
 
 export default function RootLayout({
@@ -22,8 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <meta name="creator" content="José Pinheiro" />
+      </head>
       <body
-        className={`${poppins.variable} antialiased max-w-[100vw] relative`}
+        className={`${poppins.variable} antialiased`}
         style={{
           backgroundImage: `url('/assets/img/BG.png')`,
           backgroundSize: "cover",
