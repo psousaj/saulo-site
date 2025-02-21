@@ -70,6 +70,7 @@ export default function RootLayout({
         <meta name="creator" content="José Pinheiro" />
         <GoogleTagManager gtmId="GTM-T2Q5N8K8" />
         <GoogleAnalytics gaId="GTM-T2Q5N8K8" />
+        <meta name="google-site-verification" content="qm_OqDT1xrHIeume0ConisQQVoTThUR93uTW0_PYeJM" />
         <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
       </head>
       <body className={`${poppins.variable} antialiased bg-black relative select-none`}>

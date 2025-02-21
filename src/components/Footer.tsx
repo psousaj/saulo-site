@@ -50,6 +50,7 @@ export default function Footer() {
                     </p>
                 </div>
             </div>
+            <p className="col-span-4 text-xs">Feito por <Link className="font-bold" href="https://pinheirodev.com" target="_blank" rel="Saulo_Alves">José Pinheiro</Link></p>
             {/* Line */}
             <div className="w-full h-2 md:col-span-4 bg-gradient-to-r from-[#0092C8] to-[#0092C8]" />
         </div>
