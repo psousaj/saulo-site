@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import { ComprarButton } from "./ComprarButton"
-import { useEffect, useRef, useState } from "react"
 
 export default function PaymentBox() {
     return (
