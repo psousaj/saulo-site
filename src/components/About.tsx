@@ -45,7 +45,7 @@ export default function About() {
                     melhorar sua saúde e performance.
                 </p>
 
-                <ComprarButton classname="mx-auto" />
+                <ComprarButton className="mx-auto" />
 
                 {/* About Light */}
                 <div className="absolute bottom-0 w-full h-2/3 z-[-1]">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-
 import "./globals.css";
+import GridBackground from "@/components/Layout/GridBackground";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "900"],
@@ -24,17 +24,11 @@ export default function RootLayout({
       <head>
         <meta name="creator" content="José Pinheiro" />
       </head>
-      <body
-        className={`${poppins.variable} antialiased`}
-        style={{
-          backgroundImage: `url('/assets/img/BG.png')`,
-          backgroundSize: "cover",
-          backgroundRepeat: "repeat-y",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        {children}
+      <body className={`${poppins.variable} antialiased bg-black relative`}>
+        <GridBackground />
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );

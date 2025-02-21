@@ -46,7 +46,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/comprar",
-        destination: "https://hotmart.com",
+        destination: "https://pay.hotmart.com/R96056884L?off=lxb90919&_hi=eyJzaWQiOiIwZWZkYjMxMjYyMWE0ZTRjYjFiN2Y5MWYyYWFmZDljMyJ9.1740094360234",
         permanent: true
       }
     ]
