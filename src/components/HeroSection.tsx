@@ -13,7 +13,7 @@ export default function HeroSection() {
             {/* Left Column - Text Content */}
             <div className="space-y-8 mx-auto lg:pr-0">
                 <div className="space-y-6 z-10">
-                    <h1 className="text-3xl space-y-0 md:space-y-3 font-bold leading-10 md:leading-relaxed text-white md:text-5xl lg:text-6xl">
+                    <h1 className="text-3xl space-y-3 font-bold leading-10 md:leading-relaxed text-white md:text-5xl lg:text-6xl">
                         <span className="block">Guia Prático de Dieta</span>
                         <span className="block font-normal">para Iniciantes na</span>
                         <span className="block">Musculação:</span>
@@ -36,7 +36,7 @@ export default function HeroSection() {
                     width={600}
                     height={700}
                     // className="relative z-[-1] scale-105 md:scale-100 -top-16 md:inset-0 object-contain w-[150%] lg:w-full"
-                    className="relative z-[-1] scale-105 md:scale-100 md:inset-0 object-contain w-[150%] lg:w-full"
+                    className="relative z-[-1] scale-105 md:inset-0 object-contain w-[150%] lg:w-full"
                     priority
                 />
             </div>

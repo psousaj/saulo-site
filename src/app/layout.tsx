@@ -14,22 +14,29 @@ const poppins = Poppins({
   subsets: ["latin"]
 });
 
+// const domain = "www.sauloalvesnutri.com.br"
+const domain = "www.saulo-alves.vercel.app"
+
 export const metadata: Metadata = {
-  title: "Saulo Alves - Nutricionista",
-  description: "Guia Prático de Dieta para Iniciantes na Musculação. Aprenda a montar sua dieta com um especialista.",
-  keywords: "nutrição, dieta, musculação, alimentação saudável, emagrecimento, saúde",
+  title: "Saulo Alves - Nutricionista Esportivo",
+  description: "Guia Prático de Dieta para Iniciantes na Musculação. Aprenda a montar sua dieta com um especialista em Nutrição Esportiva e Emagrecimento.",
+  keywords: "nutrição, dieta, musculação, guia, iniciantes na musculação, alimentação saudável, emagrecimento, saúde",
   robots: "index, follow",
+  authors: [
+    { name: "José Pinheiro", url: "https://pinheirodev.com" }
+  ],
+  publisher: "José Pinheiro",
   alternates: {
-    canonical: "https://www.sauloalvesnutri.com.br",
+    canonical: `https://${domain}`,
   },
   openGraph: {
     title: "Saulo Alves - Nutricionista",
     description: "Guia Prático de Dieta para Iniciantes na Musculação.",
-    url: "https://www.sauloalvesnutri.com.br",
+    url: `https://${domain}`,
     type: "website",
     images: [
       {
-        url: "https://www.sauloalvesnutri.com.br/assets/img/principal.png",
+        url: `https://${domain}/assets/img/principal.png`,
         width: 1200,
         height: 630,
         alt: "Saulo Alves - Guia de Dieta para Iniciantes",
@@ -41,7 +48,7 @@ export const metadata: Metadata = {
     site: "@seuTwitter",
     title: "Saulo Alves - Nutricionista",
     description: "Guia Prático de Dieta para Iniciantes na Musculação.",
-    images: ["https://www.sauloalvesnutri.com.br/assets/img/principal.png"],
+    images: [`https://${domain}/assets/img/principal.png`],
   },
 };
 
@@ -50,8 +57,8 @@ const jsonLD = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Saulo Alves",
-  "url": "https://www.sauloalvesnutri.com.br",
-  "jobTitle": "Nutricionista",
+  "url": `https://${domain}`,
+  "jobTitle": "Nutricionista Esportivo",
   "sameAs": [
     "https://www.instagram.com/sauloalvesnutri/",
     "https://br.linkedin.com/in/saulo-martins-alves-37b6a1155"
@@ -69,7 +76,6 @@ export default function RootLayout({
       <head>
         <meta name="creator" content="José Pinheiro" />
         <GoogleTagManager gtmId="GTM-T2Q5N8K8" />
-        <GoogleAnalytics gaId="GTM-T2Q5N8K8" />
         <meta name="google-site-verification" content="qm_OqDT1xrHIeume0ConisQQVoTThUR93uTW0_PYeJM" />
         <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
       </head>

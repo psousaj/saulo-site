@@ -101,7 +101,7 @@ const asks = [
 
 export default function Home() {
   return (
-    <main className="p-4 lg:p-10 pb-0 text-white grid grid-cols-1 gap-10 mx-auto max-w-[1300px]">
+    <main className="p-4 lg:p-10 pb-0 text-white grid grid-cols-1 gap-14 mx-auto max-w-[1300px]">
       {/* Hero Section */}
       <HeroSection />
 

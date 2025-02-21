@@ -51,7 +51,7 @@ export default function FrequentlyAsks({ asks }: AskPropType) {
                             backgroundPosition: "-31px center",
                             backgroundSize: "117% 158%"
                         }}
-                        className="whatsappBox w-full md:w-8/12 h-24 rounded-md flex justify-center items-center gap-4 p-4"
+                        className="whatsappBox w-full max-w-[383px] md:w-8/12 h-24 rounded-md flex justify-center items-center gap-4 p-4"
                     >
                         <Image src={"/assets/img/iconWhats.png"} alt="..." width={35} height={35} />
                         <div className="space-y-1">
