@@ -5,11 +5,11 @@ import { ComprarButton } from "./ComprarButton"
 
 export default function PaymentBox() {
     return (
-        <div className="container relative flex justify-center w-full p-6 overflow-visible">
+        <div className="container relative flex justify-center w-full p-5 md:p-6 overflow-visible">
             {/* Center Image */}
             <div className="bg-gradient-to-l from-[#004370] to-[#4697BE] absolute w-[98.8svw] h-[310px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
-            <div className="-translate-x-6 md:translate-x-0 md:p-6 flex relative items-center gap-[135px]">
+            <div className="-translate-x-6 md:-translate-x-40 lg:translate-x-0 md:p-6 flex relative lg:items-center gap-[135px]">
                 {/* LEFT */}
                 <div className="relative bg-gradient-to-tl from-[#000914] to-[#00415A] border border-[#2F87AC] shadow-[3px_-3px_40px_-1px_#2F87AC] space-y-4 p-4 md:p-6 max-w-[312px] md:max-w-[370px] rounded-2xl flex-1 h-[420px] flex justify-center flex-col">
                     {/* Header */}
@@ -23,9 +23,9 @@ export default function PaymentBox() {
                                 {/* Main price display */}
                                 <div className="text-4xl items-baseline font-bold relative">
                                     <span className="text-xl absolute top-[2px]">por:</span>
-                                    <span className="text-5xl">5X R$</span>
-                                    <span className="text-8xl font-bold leading-none">8</span>
-                                    <span className="text-5xl absolute bottom-3">,25</span>
+                                    <span className="text-4xl fold:text-5xl">5X R$</span>
+                                    <span className="text-8xl fold:text-8xl font-bold leading-none">8</span>
+                                    <span className="text-4xl fold:text-5xl absolute bottom-3">,25</span>
                                 </div>
 
                                 {/* À vista price */}
@@ -56,12 +56,12 @@ export default function PaymentBox() {
                         alt=""
                         width={150}
                         height={75}
-                        className="absolute -right-[85px] md:-right-[110px] scale-[.68] md:scale-100 top-1/2 -translate-y-[180px] md:-translate-y-[58%]"
+                        className="absolute -right-[88px] md:-right-[120px] lg:-right-[110px] scale-[.65] md:scale-100 top-1/2 -translate-y-[180px] md:-translate-y-[58%]"
                     />
                 </div>
 
                 {/* RIGHT */}
-                <div className="hidden md:flex items-start mt-5 flex-1">
+                <div className="hidden lg:flex items-start mt-5 flex-1">
                     <div className="flex-1 space-y-7">
                         <h3 className="text-3xl leading-7 font-bold mb-2 flex flex-col">
                             Você não tem absolutamente

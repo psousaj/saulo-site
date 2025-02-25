@@ -4,7 +4,7 @@ import { ComprarButton } from '@/components/ComprarButton';
 export default function HeroSection() {
     return (
 
-        <div className="container mx-auto grid md:h-dvh gap-10 md:gap-2 grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="container mx-auto grid md:h-dvh lg:h-auto xl:h-dvh gap-10 md:gap-14 lg:gap-2 grid-cols-1 lg:grid-cols-2 items-center">
             {/* Light */}
             <div className="absolute inset-0 w-full h-[250px] md:h-[550px] z-[-1]">
                 <Image src="/assets/img/topLight.png" fill alt="..." />
@@ -13,7 +13,7 @@ export default function HeroSection() {
             {/* Left Column - Text Content */}
             <div className="space-y-8 mx-auto lg:pr-0">
                 <div className="space-y-6 z-10">
-                    <h1 className="text-3xl space-y-3 font-bold leading-10 md:leading-relaxed text-white md:text-5xl lg:text-6xl">
+                    <h1 className="text-3xl space-y-3 font-bold leading-10 lg:space-y-0 xl:leading-normal text-white md:text-5xl lg:text-6xl">
                         <span className="block">Guia Prático de Dieta</span>
                         <span className="block font-normal">para Iniciantes na</span>
                         <span className="block">Musculação:</span>
@@ -25,7 +25,7 @@ export default function HeroSection() {
                     <p className="block">e otimize seus treinos</p>
                 </div>
 
-                <ComprarButton className='hidden md:inline-block' />
+                <ComprarButton className='hidden lg:inline-block' />
             </div>
 
             {/* Right Column - Image */}

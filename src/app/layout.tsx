@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import "./globals.css";
 import GridBackground from "@/components/Layout/GridBackground";
@@ -14,8 +14,7 @@ const poppins = Poppins({
   subsets: ["latin"]
 });
 
-// const domain = "www.sauloalvesnutri.com.br"
-const domain = "www.saulo-alves.vercel.app"
+const domain = "sauloalvesnutri.com.br"
 
 export const metadata: Metadata = {
   title: "Saulo Alves - Nutricionista Esportivo",
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
         url: `https://${domain}/assets/img/principal.png`,
         width: 1200,
         height: 630,
-        alt: "Saulo Alves - Guia de Dieta para Iniciantes",
+        alt: "Saulo Alves - Guia de Dieta para Iniciantes na Musculação",
       },
     ],
   },
