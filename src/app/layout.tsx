@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import type { Metadata } from "next"
+import { Poppins } from "next/font/google"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import { GoogleTagManager } from '@next/third-parties/google'
 
-import "./globals.css";
-import GridBackground from "@/components/Layout/GridBackground";
+import "./globals.css"
+import GridBackground from "@/components/Layout/GridBackground"
 
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "900"],
   variable: "--font-poppins",
   subsets: ["latin"]
-});
+})
 
 const domain = "sauloalvesnutri.com.br"
 
@@ -42,14 +42,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    site: "@seuTwitter",
-    title: "Saulo Alves - Nutricionista",
-    description: "Guia Prático de Dieta para Iniciantes na Musculação.",
-    images: [`https://${domain}/assets/img/principal.png`],
-  },
-};
+}
 
 
 const jsonLD = {
@@ -62,13 +55,13 @@ const jsonLD = {
     "https://www.instagram.com/sauloalvesnutri/",
     "https://br.linkedin.com/in/saulo-martins-alves-37b6a1155"
   ]
-};
+}
 
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="pt-BR">
@@ -87,5 +80,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  );
+  )
 }

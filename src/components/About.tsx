@@ -65,19 +65,19 @@ export default function About() {
     return (
         <div className="container relative mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Left Column - Image */}
-            <div className="relative flex-1">
+            <div className="relative h-full flex-1">
                 <Image
                     src="/assets/img/saulo.png"
                     alt="Saulo Alves"
                     width={600}
                     height={700}
-                    className="rounded-3xl absolute z-[-1] top-24 -translate-x-1/2 left-1/2 md:top-36 lg:inset-0 lg:top-28 brightness-75"
+                    className="rounded-3xl absolute z-[-1] top-24 lg:top-auto -translate-x-1/2 left-1/2 brightness-75"
                     priority
                 />
             </div>
 
             {/* Right Column - Content */}
-            <div className="relative space-y-6 p-4 md:col-span-2 overflow-visible flex flex-col justify-center">
+            <div className="relative space-y-6 p-4 col-span-2 lg:col-span-1 overflow-visibleflex flex-col justify-center">
                 <h2 className="text-3xl md:text-4xl mb-10 md:mb-0 font-bold text-[#0088FF]">
                     VOCÊ VAI APRENDER
                     <span className="block">COM QUEM SABE!</span>
